@@ -1,1 +1,18 @@
-
+Linked lists are a liner data structure. In this Every element is a seperate object.
+Here the elements are not stored in contiguous locations.Elements are linked with each other with help of pointers.
+As the size of array is fixed we can use linked lists instead as they provide the liberty to have a dynamic or non-fixed length.
+Inserting a new element in an array of elements is expensive, because room has to be created for the new elements and to create room existing elements have to shifted.
+But in linked lists new elements can be inserted or deleted with ease.
+A linked list is represented by a pointer to the first node of the linked list. The first node is called head. If the linked list is empty, then value of head is NULL.
+Every element of a list is called as node. Node has 2 parts ie, info part and link part.
+An example for list in C
+struct Node 
+{ 
+  int data; 
+  struct Node *link; 
+}; 
+We might think that linked lists are full of advantages but it's not true there are following dissadvantages:
+1) Random access is not allowed. We have to access elements sequentially starting from the first node. So we cannot do binary search with linked lists efficiently with its default implementation. Read about it here.
+2) Extra memory space for a pointer is required with each element of the list.
+3) Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.
+Hence we can say that no data structure is best, it all depends on the way we use a specific data structure.
