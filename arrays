@@ -1,0 +1,45 @@
+ An array can be best defined as a collection of similar data items.In this all the elements share the common name.Each element of the
+ array can be accessed by the subscript(or index).Array is used to process,store and print large amount of similar data using a single 
+ variable.
+ Example 1:Set of integers,set of characters are the examples of arrays
+ Example 2:Grade of all the students in a class is a character array.
+ The pictorial representation of an array of 5 integers can be shown as:
+ 
+                              A[0]=10
+                              A[1]=12
+                              A[2]=30
+                              A[3]=50
+                              A[4]=35
+ 
+ CLASSIFICATION OF ARRAYS:
+ Arrays can be mainly classified into 2 types:
+ 1]. SINGLE DIMENSIONAL ARRAY
+ 2]. MULTI DIMENSIONAL ARRAY
+ Single-Dimensional arrays:
+ It can be defined as a linear list consisting of related data items of same type.In this all the data items are stored in contiguous
+ memory location one after the another.For example,a single dimensional array consisting of of 5 integer elements can be shown as follows.
+                                                
+                                                10    20   30   40   50   
+                                                A[0] A[1] A[2] A[3] A[4]
+
+An index or subscript gives the position of an element in the array.For eg,in the above array:
+
+* 0th item 10 can be accessed by specifying A[0]
+* 1th item 20 can be accessed by specifying A[1]
+On conclusion the array has the following basic properties:
+1. The elements of the array should be of same datatype.
+2. The data items are stored contiguosly in memory.
+3. The index of the array is always an integer.
+
+TWO DIMENSIONAL ARRAYS(MULTI-DIMENSIONAL ARRAYS)
+Arrays with two or more dimensions are called multi-dimensional arrays.As we know arrays with one set of square brackets [] are single 
+dimensional array.Array with two sets of square brackets [][] are called MULTI-DIMENSIONAL ARRAYS.For eg.
+
+                               int b[1][1];         //b is declared as a 2-D array.
+                              
+ A two-dimensional array is used when data items are arranged in row-wise and column-wise in tabular fashion.To identify a particular
+ item we have to specify 2 indices.
+                               
+                               
+
+ 
