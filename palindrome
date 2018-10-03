@@ -1,0 +1,8 @@
+A palindrome is a sequence of characters which reads the same backward as forward.
+"noon","malayalam",12321, 4554 are few examples of palindrome.
+We can check if a number is a palindrome or not by taking the reverse of the number and comparing it with the original number.
+To find the reverse of a number the individual digits are taken one by one from the right.Initially rev=0.At each stage rev is multiplied by 10 and added to digit,
+rev found at the end the process of taking individual digits gives the reverse of the original number.
+We can check if a string is a palindrome or not by taking the reverse of the string and comparing it with the original string.
+To do this,the first character is compared with the last character.Then the second character is compared with last but one character and so on.
+If at any stage in this process, the characters are not matched then the given string is not a palindrome.
