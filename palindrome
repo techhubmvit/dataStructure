@@ -1,3 +1,4 @@
+
 A palindrome is a sequence of characters which reads the same backward as forward.
 "noon","malayalam",12321, 4554 are few examples of palindrome.
 We can check if a number is a palindrome or not by taking the reverse of the number and comparing it with the original number.
