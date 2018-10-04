@@ -1,0 +1,78 @@
+void main()
+{
+  int i,j,k,m,n,p,q,sum;;
+  int a[10][10],b[10][10],c[10][10];
+  
+  //Matrix A size
+ 
+  printf("Enter the size of the matrix A\n");
+  scanf("%d%d",&m,&n);
+  
+  // Matrix B size
+  
+  printf("Enter the size of the matrix B\n");
+  scanf("%d%d",&p,&q);
+  
+  // Matrix Multiplication Condition
+  
+  if(n!=p)
+  {
+    printf("Multiplication not possible\n");
+    exit(0);
+  }
+  
+  //Elements of A
+  
+  printf("Enter the elements of A\n");
+  for(i=0;i<m;i++)
+    for(j=0;j<n;j++)
+      scanf("%d",&a[i][j]);
+  
+  //Elements of B
+  
+  printf("Enter the elements of B\n");
+  for(i=0;i<p;i++)
+    for(j=0;j<q;j++)
+      scanf("%d",&b[i][j]);
+  
+  //Display Matrix A
+  
+  printf("The elements of matrix A are\n");
+  for(i=0;i<m;i++)
+  {
+    for(j=0;j<n;j++)
+      printf("%d\t",a[i][j]);
+    printf("\n");
+  }
+  
+  //Display matrix B
+  
+  printf("The elements of matrix B are\n");
+  for(i=0;i<p;i++)
+  {
+    for(j=0;j<q;j++)
+      printf("%d\t",b[i][j]);
+    printf("\n");
+  }
+  
+  //Multiplication proccess
+  
+  printf("Multiplication :\n");
+  for(i=0;i<m;i++)
+    for(j=0;j<q;j++)
+    {
+      sum=0;
+      for(k=0;k<n;k++)
+        sum+=a[i][k]*b[k][j];
+      c[i][j]=sum;
+    }
+  
+  //Display final matrix after multiplication
+  printf("The final matrix : \n");
+  for(i=0;i<m;i++)
+  {
+    for(j=0;j<q;j++)
+      printf("%d\t",c[i][j]);
+    printf("\n");
+  }
+}
