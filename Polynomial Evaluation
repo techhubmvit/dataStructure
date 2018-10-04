@@ -1,0 +1,27 @@
+//C program for evaluating polynomial
+void main()
+{
+  int n,i,a[10],x,sum=0;
+  
+  printf("Enter the value of degree\n");
+  scanf("%d",&n);
+  
+  printf("Enter n+1 coefficients\n");
+  for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    
+  printf("Enter the value of x\n");
+  scanf("%d",&x);
+  
+  //Computing the polynomial
+  sum=a[n]*x;
+  
+  //Substituting the coefficients and values of x in the equation
+  
+  for(i=n-1;i>=1;i++)
+  {
+    sum=(sum+a[i])*x;
+  }
+  sum=sum+a[0];
+  printf("Evaluated polynomial equation result = %d",sum);
+}
