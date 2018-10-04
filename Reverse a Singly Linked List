@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+	int info;
+	struct node* link;
+};
+typedef struct node* Node;
+Node createnode(int info)
+{
+	Node temp=(Node)malloc(sizeof(struct node));
+	temp->info=info;
+	temp->link=NULL;
+	return temp;
+}
+Node finsert(Node front,int info)
+{
+	Node temp=createnode(info);
+	if(front == NULL)
+		front=temp;
+	else
+	{
+		temp->link=front;
+		front=temp;
+	}
+	return front;
+}
+Node reverse(Node front)
+{
+	Node prev = NULL;
+	Node cur=front;
+	Node next=NULL;
+	while(cur!=NULL)
+	{
+		next=cur->link;
+		cur->link=prev;
+		prev=cur;
+		cur=next;
+	}
+	return prev;
+}
+void display(Node front)
+{
+	Node temp=front;
+	if(front==NULL)
+		printf("List is empty.");
+	else
+	{
+		while(temp!=NULL)
+		{
+			printf("-> %d\t ",temp->info);
+			temp=temp->link;
+		}		
+	}
+}
+void main()
+{
+	int i;
+	Node front =NULL;
+	for(i=0;i<5;i++)
+		front=finsert(front,i);
+	display(front);
+	front=reverse(front);
+	printf("\n");
+	display(front);
+}
