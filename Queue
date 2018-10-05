@@ -1,0 +1,21 @@
+In a queue,the elements are inserted from one end and the elements are deleted from the other end.The end from where the elements
+are inserted is called REAR end and the end from where the elements are deleted is called FRONT end.Since the first item
+inserted is the first item to be deleted from the Queue,Queue is also called First In First Out(FIFO) data structure.In a queue
+elements are always inserted from the rear end and elements are deleted from the front end.The pictorial representation of the queue
+can be shown as:
+                                          
+                                              f       r
+                                       0   1   2   3   4
+                       Delete< -------10  20  30        <----------  Insert
+                       
+                       FRONT END                                      REAR END
+                       
+TYPES OF QUEUES
+      1. QUEUE(ORDINARY QUEUE)
+      2.CIRCULAR QUEUE
+      3.DOUBLE ENDED QUEUE
+      4.PRIORITY QUEUE
+      
+
+    
+                       
