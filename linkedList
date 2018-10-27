@@ -1,4 +1,4 @@
-Linked lists are a liner data structure. In this Every element is a seperate object.
+ hey guys ,Linked lists are a liner data structure. In this Every element is a seperate object.
 Here the elements are not stored in contiguous locations.Elements are linked with each other with help of pointers.
 As the size of array is fixed we can use linked lists instead as they provide the liberty to have a dynamic or non-fixed length.
 Inserting a new element in an array of elements is expensive, because room has to be created for the new elements and to create room existing elements have to shifted.
